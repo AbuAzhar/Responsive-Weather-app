@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather APP</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="notch"><span>O0</span><span>O0</span></div>
+      <h1>Weather App</h1>
+      <form id="submit">
+        <input type="text" placeholder="Search City**" id="search-input" />
+        <input type="submit" id="submit-inp" value="Search" />
+      </form>
+
+      <div class="undefined">
+        <img src="./img/error-48269.png" width="fit-content" alt="" />
+        <h1>Search Valid City</h1>
+      </div>
+      <div class="top-result">
+        <p class="main">Weather</p>
+        <div class="results"></div>
+      </div>
+      <div class="show-results">
+        <table border="0" width="100%" height="100">
+          <tr>
+            <th>City</th>
+            <th>Time</th>
+            <th>Temp</th>
+            <th>Wind</th>
+            <th>Rain</th>
+          </tr>
+          <tr style="border: none; visibility: hidden">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td class="location">.....</td>
+            <td class="time">.....</td>
+            <td class="temperature">.....</td>
+            <td class="wind">.....</td>
+            <td class="rain">.....</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="line"></div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
